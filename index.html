@@ -37,9 +37,9 @@
   
   <body>
   
-	<div class="container-fluid" style="position:relative;">
+	<div class="container-fluid" style="height:100%; padding-left:0; padding-right:0;">
 		<div class="col-md-2"></div>
-		<div class="col-xs-12 col-md-8" >
+		<div class="col-xs-12 col-md-8" style="height:100%; padding-left:0; padding-right:0;">
 			<!--头部-->
 			<div id="header" class="content_center" style="">
 				<div class="col-xs-6 content_center" style="-webkit-box-pack:start;-moz-box-pack:start; box-pack:start;">
@@ -118,244 +118,264 @@
 				</div>
 			</div>
 			
-			<div class="row" onclick="hideExtra()">
-				<div class=" function_group_wrapper" style="height:255px; margin-top:65px;">
-					<div style="height:40px;">
-						<span class="function_group_title">正在进行的工作</span>
-					</div>
-					<div class="function_group">
-						<div class="scroll_container" style="height:200px; ">
-							<div class="article_box">
-								<div style="width:100%; height:100px;">
-									<img src="./imgs/eee.jpeg"/>
-								</div>
-								<div class="article_title_box">
-									<a>这个秋天和我一起呀。</a>
-									<span style="position:absolute; bottom:0; display:block;">创建于：2020-12-9 </span>
-								</div>
-							</div>
-							<div class="article_box" >
-								<div style="width:100%; height:100px;">
-									<img src="./imgs/fff.jpg"/>
-								</div>
-								<div class="article_title_box">
-									<a>谢谢你，那个陪伴了我8年的女孩。</a>
-									<span style="position:absolute; bottom:0; display:block;">创建于：2020-12-9 </span>
-								</div>
-							</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				
-				
-				<!--站点整体情况-->
-				<div class=" function_group_wrapper" style="height:175px;">
-					<div style="height:35px;">
-						<span class="function_group_title">站点整体情况</span>
-					</div>
+			<div style="width:100%; height:100%; padding-top:65px; overflow-x:hidden;">
+				<div style="width:100%; height:100%; box-sizing:content-box; padding-right:25px; overflow-y:scroll;">
 					
-					<div class="function_group">
-						<div style="height:150px;">
-							<div class="siteinfo_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="info">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-read" style="font-size:20px;"></span>
-											<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">文章</span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span>65</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="siteinfo_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="info">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-eye" style="font-size:20px;"></span>
-											<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">访客</span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span>65</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="siteinfo_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="info">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-user" style="font-size:20px;"></span>
-											<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">用户</span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span>65</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="siteinfo_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="info">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-message" style="font-size:20px;"></span>
-											<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">留言</span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span>65</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				
-				<!--新的创作-->
-				<div class=" function_group_wrapper" style="height:175px;">
-					<div style="height:35px;">
-						<span class="function_group_title">新的创作</span>
-					</div>
 					
-					<div class="function_group">
-						<div style="height:150px;">
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item1.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-edit" style="font-size:20px;"></span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">文章</span>
-										</div>
-									</div>
-								</div>
+					<div class="" onclick="hideExtra()" style="">
+						<div class=" function_group_wrapper" style="height:255px;">
+							<div style="height:40px;">
+								<span class="function_group_title">正在进行的工作</span>
 							</div>
-							
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item2.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-file-add" style="font-size:20px;"></span> 
+							<div class="function_group">
+								<div class="scroll_container" style="height:200px; ">
+									<div class="article_box">
+										<div style="width:100%; height:100px;">
+											<img src="./imgs/eee.jpeg"/>
 										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">随笔</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item3.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-tag" style="font-size:20px;"></span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">标签</span>
+										<div class="article_title_box">
+											<a>这个秋天和我一起呀。</a>
+											<span style="position:absolute; bottom:0; display:block;">创建于：2020-12-9 </span>
 										</div>
 									</div>
-								</div>
-							</div>
-							
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item4.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-file-image" style="font-size:20px;"></span>
+									<div class="article_box" >
+										<div style="width:100%; height:100px;">
+											<img src="./imgs/fff.jpg"/>
 										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">媒体</span>
+										<div class="article_title_box">
+											<a>谢谢你，那个陪伴了我8年的女孩。</a>
+											<span style="position:absolute; bottom:0; display:block;">创建于：2020-12-9 </span>
 										</div>
 									</div>
+									
+									
 								</div>
 							</div>
 						</div>
 						
-					</div>
-				</div>
-				
-				<div class=" function_group_wrapper" style="height:175px;">
-					<div style="height:35px;">
-						<span class="function_group_title">管理</span>
-					</div>
-					
-					<div class="function_group">
-						<div style="height:150px;">
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item5.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-read" style="font-size:20px;"></span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">文章管理</span>
-										</div>
-									</div>
-								</div>
+						
+						<!--站点整体情况-->
+						<div class=" function_group_wrapper" style="height:175px;">
+							<div style="height:35px;">
+								<span class="function_group_title">站点整体情况</span>
 							</div>
 							
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item6.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-book" style="font-size:20px;"></span> 
+							<div class="function_group">
+								<div style="height:150px;">
+									<div class="siteinfo_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="info">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-read" style="font-size:20px;"></span>
+													<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">文章</span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span>65</span>
+												</div>
+											</div>
 										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">随笔管理</span>
+									</div>
+									
+									<div class="siteinfo_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="info">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-eye" style="font-size:20px;"></span>
+													<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">访客</span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span>65</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="siteinfo_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="info">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-user" style="font-size:20px;"></span>
+													<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">用户</span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span>65</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="siteinfo_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="info">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-message" style="font-size:20px;"></span>
+													<span style="font:bold 16px/20px 宋体; vertical-align: text-bottom; padding-left:5px;">留言</span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span>65</span>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item7.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-diff" style="font-size:20px;"></span> 
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">标签管理</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="op_box" style="width:160px; height:125px;">
-								<div class="content_center full_box">
-									<div class="op_item" style="background-image: url('./imgs/item/item8.jpg');">
-										<div class="content_center" style="height:50%; width:100%;">
-											<span class="iconfont icon-image" style="font-size:20px;"></span>
-										</div>
-										<div class="content_center" style="height:50%; width:100%;">
-											<span style="font-size:13px;">媒体管理</span>
-										</div>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 						
-					</div>
-				</div>
-				
-				<div class=" function_group_wrapper" style="height:175px;">
-					<div class="function_group">
-						<div style="height:100px; padding-top:15px;">
-							<p>不积跬步无以至千里，不积小流无以成江海。</p>
-							<p>路漫漫其修远兮，吾将上下而且所。</p>
+						
+						<!--新的创作-->
+						<div class=" function_group_wrapper" style="height:175px;">
+							<div style="height:35px;">
+								<span class="function_group_title">新的创作</span>
+							</div>
+							
+							<div class="function_group">
+								<div style="height:150px;">
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item1.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-edit" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">文章</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item2.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-file-add" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">随笔</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item3.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-tag" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">标签</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item3.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-tag" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">标签</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item4.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-file-image" style="font-size:20px;"></span>
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">媒体</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
 						</div>
 						
+						<div class=" function_group_wrapper" style="height:175px;">
+							<div style="height:35px;">
+								<span class="function_group_title">管理</span>
+							</div>
+							
+							<div class="function_group">
+								<div style="height:150px;">
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item5.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-read" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">文章管理</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item6.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-book" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">随笔管理</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item7.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-diff" style="font-size:20px;"></span> 
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">标签管理</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="op_box" style="width:160px; height:125px;">
+										<div class="content_center full_box">
+											<div class="op_item" style="background-image: url('./imgs/item/item8.jpg');">
+												<div class="content_center" style="height:50%; width:100%;">
+													<span class="iconfont icon-image" style="font-size:20px;"></span>
+												</div>
+												<div class="content_center" style="height:50%; width:100%;">
+													<span style="font-size:13px;">媒体管理</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class=" function_group_wrapper" style="height:175px;">
+							<div class="function_group">
+								<div style="height:100px; padding-top:15px;">
+									<p>不积跬步无以至千里，不积小流无以成江海。</p>
+									<p>路漫漫其修远兮，吾将上下而且所。</p>
+								</div>
+								
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+			
 		</div>
 		
 		
@@ -387,13 +407,7 @@
 	}
 	
 	#header {
-		height:65px; 
-		width: inherit;
-		position:fixed ;
-		top:0 ;
-		background-image:url('./imgs/header_after.jpg'); 
-		margin-left:-30px; 
-		border-bottom:2px solid #87CEFA
+		position:fixed; top:0; height:65px; width:inherit; top:0; border-bottom:2px solid #87CEFA; background-image:url('./imgs/header_after.jpg')
 	}
 	
 	#extra{
@@ -404,7 +418,6 @@
 		background-color:#ffffff;
 		border-bottom:1px solid #fff;
 		z-index:200;
-		margin-left:-30px;
 	}
 	
 	.extra_item {
@@ -454,13 +467,12 @@
 	.function_group_wrapper {
 		border-bottom:1px dashed #bbb ;
 		overflow-y: hidden;
-		height:150px
-		
+		height:150px;
+		padding-left:10px;
+		padding-right:10px;
 	}
 	
 	.function_group {
-		height:100%; 
-		width:100%;
 		overflow-x:scroll ;
 		overflow-y: hidden;
 		padding-bottom:25px;
@@ -524,7 +536,8 @@
 		height:100px; 
 		padding-top:10px;
 		padding-bottom:10px;
-		margin-right:10px;
+		margin-left:5px;
+		margin-right:5px;
 		border:1px solid #ccc;
 		border-radius:4px;
 		box-shadow:0 0 5px 0 #aaa;

@@ -41,78 +41,81 @@
   
   <body>
   
-	<div class="container-fluid" style="position:relative;">
+	<div class="container-fluid" style="height:100%; padding-left:0; padding-right:0;">
 		<div class="col-md-2"></div>
 		
-		<div class="col-xs-12 col-md-8" style="padding-left:0; padding-right:0;">
-			<div class="content_center" style="height:50px;  top:0; border-bottom:2px solid #87CEFA; margin-left:-15px; margin-right:-15px; background-image:url('./imgs/header_after.jpg')">
+		<div class="col-xs-12 col-md-8" style="position:relative; height:100%; padding-left:0; padding-right:0;">
+			<div class="content_center" style="position:fixed; top:0; height:50px; width:inherit; top:0; border-bottom:2px solid #87CEFA; background-image:url('./imgs/header_after.jpg')">
 				<div class="col-xs-3"><span class="iconfont icon-left" style="font-size:20px;"></span></div>
 				<div class="col-xs-6" align="center">站点信息</div>
 				<div class="col-xs-3"></div>
 			</div>
 			
-			<div>
-				<!--博客名称-->
-				<div class="siteinfo_item" style="height:80px;">
-					<span class="title">博客名称</span>
-					<span></span>
-					<div>
-						<div style="width:120px;">
-							<input type="text" value="南国晚秋" style="font-size:18px;" />
+			<!--展示区域-->
+			<div style="width:100%; height:100%; padding-top:50px; overflow-x:hidden;">
+				<div style="width:100%; height:100%; box-sizing:content-box; padding-right:25px;  overflow-y:scroll;">
+					<div style="padding-left:10px; padding-right:10px;">
+						<!--博客名称-->
+						<div class="siteinfo_item" style="height:80px;">
+							<span class="title">博客名称</span>
+							<span></span>
+							<div>
+								<div style="width:120px;">
+									<input type="text" value="南国晚秋" style="font-size:18px;" />
+								</div>
+								
+								<span style="font-size:12px; padding-top:5px; padding-left:2px;">2020-10-10</span>
+							</div>
+							<div style="position:absolute; left:150px; top:10px;">
+								<div style="width:62px; height:62px; border:1px solid #ccc;">
+									<img src="./imgs/headimg.jpg" width="100%" height="100%" />
+								</div>
+							</div>
 						</div>
 						
-						<span style="font-size:12px; padding-top:5px; padding-left:2px;">2020-10-10</span>
-					</div>
-					<div style="position:absolute; left:150px; top:10px;">
-						<div style="width:62px; height:62px; border:1px solid #ccc;">
-							<img src="./imgs/headimg.jpg" width="100%" height="100%" />
+						<!--背景图片-->
+						<div class="siteinfo_item" style="height:150px;">
+							<span class="title">背景图片</span>
+							<div style="height:120px; display:flex;">
+								<div style="height:100%; width:500px; border:1px solid #ccc;">
+									<img style="width:100%; height:100%;" src="./imgs/topimg15.jpg" />
+								</div>
+							</div>
+						</div>
+						
+						<!--简介地址-->
+						<div class="siteinfo_item" style="height:50px;">
+							<span class="title">简介地址</span>
+							<span class="iconfont icon-chrome" style="vertical-align: middle;"></span>
+							<div class="" style="width:300px;">
+								<input type="text" value="http://www.fanchaojian.vicp.io:8080/article/1" />
+							</div>
+							
+						</div>
+						
+						<!--网站二维码-->
+						<div class="siteinfo_item" style="height:50px;">
+							<span class="title">站点二维码</span>
+							<span class="iconfont icon-qrcode" style="vertical-align: middle;"></span>
+							<div class="" style="width:300px;">
+								<input type="text" value="http://www.fanchaojian.vicp.io:8080" />
+							</div>
+						</div>
+						
+						<div class="siteinfo_item content_center" style="height:100px;">
+							<button id="modify" onclick="modify()" class="doSomething" style="width:120px;">修改</button>
+							<button id="save"onclick="save()" class="doSomething" style="width:120px;">保存</button>
 						</div>
 					</div>
 				</div>
-				
-				<!--背景图片-->
-				<div class="siteinfo_item" style="height:150px;">
-					<span class="title">背景图片</span>
-					<div style="height:120px; display:flex;">
-						<div style="height:100%; width:500px; border:1px solid #ccc;">
-							<img style="width:100%; height:100%;" src="./imgs/topimg15.jpg" />
-						</div>
-					</div>
-				</div>
-				
-				<!--简介地址-->
-				<div class="siteinfo_item" style="height:50px;">
-					<span class="title">简介地址</span>
-					<span class="iconfont icon-chrome" style="vertical-align: middle;"></span>
-					<div class="" style="width:300px;">
-						<input type="text" value="http://www.fanchaojian.vicp.io:8080/article/1" />
-					</div>
-					
-				</div>
-				
-				<!--网站二维码-->
-				<div class="siteinfo_item" style="height:50px;">
-					<span class="title">站点二维码</span>
-					<span class="iconfont icon-qrcode" style="vertical-align: middle;"></span>
-					<div class="" style="width:300px;">
-						<input type="text" value="http://www.fanchaojian.vicp.io:8080" />
-					</div>
-				</div>
-				
-				<div class="siteinfo_item content_center" style="height:100px;">
-					<button id="modify" onclick="modify()" class="doSomething" style="width:120px;">修改</button>
-					<button id="save"onclick="save()" class="doSomething" style="width:120px;">保存</button>
-				</div>
-				
-				
 			</div>
+			
+			
 		</div>
 		
 		
 		<div class="col-md-2"></div>
-		
-		
-		
+	</div>
 	</div>
   </body>
   
@@ -193,7 +196,7 @@
 	}
 	
 	.siteinfo_item {
-		position:relative; margin-top:15px; margin-bottom:15px;
+		position:relative; margin-bottom:15px;
 	}
 	
 	.siteinfo_item .title {
