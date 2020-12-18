@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>登录信息</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript" src="./js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./iconFont/albaba_AntDesign0fficialIcons/iconfont.css"> 
+  </head>
+  
+  <script type="text/javascript">
+	 $(function(){
+		$("input").attr("disabled","disabled"); 
+	 }) ; 
+	
+	//修改信息
+	function modify(){
+		$("input").removeAttr("disabled"); 
+		$("input:first").focus() ; 
+		$("input").parent("div").addClass("data_modify") ; 
+	}
+	
+	//保存信息
+	function save(){
+	
+	}
+	 
+	 
+  </script>
+  
+  <body>
+  
+	<div class="container-fluid" style="position:relative;">
+		<div class="col-md-2"></div>
+		
+		<div class="col-xs-12 col-md-8" style="padding-left:0; padding-right:0;">
+			<div class="content_center" style="height:50px;  top:0; border-bottom:2px solid #87CEFA; margin-left:-15px; margin-right:-15px; background-image:url('./imgs/header_after.jpg')">
+				<div class="col-xs-3"><span class="iconfont icon-left" style="font-size:20px;"></span></div>
+				<div class="col-xs-6" align="center">登录信息</div>
+				<div class="col-xs-3"></div>
+			</div>
+			
+			<div>
+				<!--博客名称-->
+				<div class="siteinfo_item">
+					<span class="title">管理员昵称</span>
+					<span></span>
+					<div>
+						<div class="" style="width:140px; margin-top:20px;">
+							<input type="text" value="你若在，便好！" style="font-size:18px;" />
+						</div>
+					</div>
+					<div style="position:absolute; left:150px; top:10px;">
+						<div style="width:62px; height:62px; border:1px solid #ccc;">
+							<img src="./imgs/headimg.jpg" width="100%" height="100%" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">性别</span>
+					<div style="width:30px;">
+						<input type="text" value="男" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item">
+					<span class="title" style="height:50px;">我的职业</span>
+					<div style="width:300px;">
+						<input type="text" value="salesforce开发工程师，java开发工程师。" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">QQ邮箱</span>
+					<div style="width:180px;">
+						<input type="text" value="1948556024@qq.com" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">我的爱好</span>
+					<div class="" style="width:300px;">
+						<input type="text" value="IT，数码，科技，拍照，旅行，游戏。" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">励志格言</span>
+					<div style="width:320px;">
+						<input type="text" value="若成为一只小鸟，则永远不知道雄鹰眼里的天空。" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">我的文章简介地址</span>
+					<div style="width:300px;">
+						<input type="text" value="http://www.fanchaojian.vicp.io:8080/article/2" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:150px;">
+					<div style="height:30px; display:flex; margin-bottom:10px;">
+						<div style="height:100%; width:480px; border-bottom:1px dashed #ccc; text-align:center;">
+							<span class="title">到哪儿能找到我？</span>
+						</div>
+					</div>
+					
+					<div style="height:120px;">
+						<div class="op_box_wapper">
+							<div class="content_center full_box">
+								<div class="op_box"
+									<span>QQ</span>
+									<div class="img_box">
+										<img class="full_box" src="./imgs/qq_QR.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="op_box_wapper">
+							<div class="content_center full_box">
+								<div class="op_box"
+									<span>微信</span>
+									<div class="img_box">
+										<img class="full_box" src="./imgs/weChat.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="op_box_wapper">
+							<div class="content_center full_box">
+								<div class="op_box"
+									<span>公众号</span>
+									<div class="img_box">
+										<img class="full_box" src="./imgs/weChat_GZH.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">微博地址</span>
+					<div style="width:300px;">
+						<input type="text" value="https://weibo.com/u/5897652360?is_all=1" />
+					</div>
+				</div>
+				
+				<div class="siteinfo_item" style="height:50px;">
+					<span class="title">github地址</span>
+					<div style="width:300px;">
+						<input type="text" value="https://www.github.com/fanchaojian" />
+					</div>
+				</div>
+				
+				
+				<div class="siteinfo_item content_center">
+					<button id="modify" onclick="modify()" class="doSomething" style="width:120px;">修改</button>
+					<button id="save"onclick="save()" class="doSomething" style="width:120px;">保存</button>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="col-md-2"></div>
+		
+		
+		
+	</div>
+  </body>
+  
+  
+  <style type="text/css" >
+	
+	body {
+		background-color:#fff;
+	}
+	
+	@link-colo {
+		color:green ; 
+	}
+	
+	.full_box {
+		height:100%; 
+		width:100% ;
+	}
+	
+	a:hover {
+		cursor:pointer;
+	}
+	
+	
+	input {
+		border:0 ;
+		outline:0 ;
+		background:none;
+		width:inherit;
+		margin-left:-1px;
+	}
+	
+	.data_modify::after {
+		content:'' ;
+		width:inherit ;
+		border-bottom:0.5px solid #87CEFA ;
+		box-shadow:0 1px 2px 0 #87CEFA;
+		display:block;
+		margin-bottom:5px;
+	}
+	
+	.content_center{
+		z-index:100;
+		margin:0 auto ;
+		
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+
+		
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+
+		
+		display:box;
+		box-pack:center;
+		box-align:center;
+
+	}
+	
+	 .doSomething { 
+		height:25px;
+		border:1px solid #ccc;
+		border-radius:4px;
+		font-size:12px;
+    	font-weight:500;
+    	background:#fff;
+    	padding-left:5px;
+    	padding-right:5px;
+		margin-left:15px;
+		margin-right:15px;
+	}
+	.doSomething:hover {
+		background-color:#F0FFFF!important ;
+		border:1px solid #00BFFF!important; 
+		box-shadow:0 0 1px #00BFFF!important;
+		color:#00BFFF!important ;
+		cursor:pointer!important;
+	}
+	
+	.siteinfo_item {
+		position:relative; margin-top:15px; margin-bottom:15px;
+	}
+	
+	.siteinfo_item .title {
+		font:bold 12px/30px Microsoft YaHei; color:green;
+	}
+	
+	.op_box_wapper {
+		width:160px; height:120px; display:table-cell;
+	}
+	
+	.op_box {
+		height:100%; 
+		width:80px; 
+		margin-left:5px; 
+		margin-right:5px; 
+		text-align:center;
+	}
+	
+	.img_box {
+		width:80px; 
+		height:80px; 
+		border:1px solid #ccc; 
+		margin-top:5px;
+		box-shadow: 0 0 4px 0 #bbb;
+	}
+	
+	
+  </style>
+</html>
