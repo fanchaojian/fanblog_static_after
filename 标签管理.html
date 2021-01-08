@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>标签管理</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript" src="./js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./iconFont/albaba_AntDesign0fficialIcons/iconfont.css"> 
+  </head>
+  
+  <script type="text/javascript">
+	 $(function(){
+		$("input,textarea").attr("disabled","disabled"); 
+	 }) ; 
+	
+	//修改信息
+	function modify(){
+		$("input,textarea").removeAttr("disabled"); 
+		$("input:first").focus() ; 
+		$("input,textarea").parent("div").addClass("data_modify") ; 
+	}
+	
+	//保存信息
+	function save(){
+	
+	}
+	 
+	 
+  </script>
+  
+  <body>
+	<div class="container-fluid" style="height:100%; padding-left:0; padding-right:0;">
+		<div class="col-md-2"></div>
+		
+		<div class="col-xs-12 col-md-8" style="position:relative; height:100%;padding-left:0; padding-right:0;">
+			<div class="content_center" style="position:fixed; top:0; height:50px; width:inherit; top:0; border-bottom:2px solid #87CEFA; background-image:url('./imgs/header_after.jpg')">
+				<div class="col-xs-3"><span class="iconfont icon-left" style="font-size:20px;"></span></div>
+				<div class="col-xs-6" align="center">标签管理</div>
+				<div class="col-xs-3"></div>
+			</div>
+			
+			<!--展示区域-->
+			<div style="width:100%; height:100%; padding-top:50px; overflow-x:hidden;">
+				<div id="content_box" style="width:100%; height:100%; box-sizing:content-box; padding-right:25px;  overflow-y:scroll;">
+					<div class="" onclick="hideExtra()" style="">
+						<!--我的标签列表-->
+						<div class=" function_group_wrapper" style="height:80px;">
+							<div class="function_group">
+								<div style="height:80px;">
+									
+								   <!--===============-->
+									<div class="op_box" style="width:150px; height:80px; min-width:100px;">
+										<div class="content_center full_box">
+											<div class="tag_box doSomething">
+												<span>JAVA随记</span>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:150px; height:80px; min-width:100px;">
+										<div class="content_center full_box">
+											<div class="tag_box doSomething">
+												<span>JAVA随记</span>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:150px; height:80px; min-width:100px;">
+										<div class="content_center full_box">
+											<div class="tag_box doSomething">
+												<span>JAVA随记</span>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:150px; height:80px; min-width:100px;">
+										<div class="content_center full_box">
+											<div class="tag_box doSomething">
+												<span>JAVA随记</span>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:150px; height:80px; min-width:100px;">
+										<div class="content_center full_box">
+											<div class="tag_box doSomething">
+												<span>JAVA随记</span>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:150px; height:80px; min-width:100px;">
+										<div class="content_center full_box">
+											<div class="tag_box doSomething">
+												<span>JAVA随记</span>
+											</div>
+										</div>
+									</div>
+									<div class="op_box" style="width:80px; height:80px; min-width:60px;">
+										<div class="content_center full_box">
+											<div class=" ">
+												<span style="font-size:25px;" class="iconfont icon-plus"></span>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						
+						
+						
+						<!--标签详情信息-->
+						<div style="padding-left:10px; padding-right:10px; padding-top:40px;">
+							<div class="tagInfo_item">
+								<span class="title" style="height:50px;">标签名称</span>
+								<div style="width:300px;">
+									<input type="text" value="JAVA随记" />
+								</div>
+							</div>
+							
+							<div class="tagInfo_item">
+								<span class="title" style="height:50px;">创建时间</span>
+								<div style="width:300px;">
+									<input type="text" value="2020-10-1- 14:20:32" />
+								</div>
+							</div>
+							
+							
+							
+							<div class="tagInfo_item" style="height:150px;">
+								<span class="title">简介地址</span>
+								<div style="height:120px; display:flex;">
+									<div style="height:100%; width:100%; border:1px solid #ccc;">
+										<textarea style="width:100%; height:100%;">生活本来就是孤独且无趣的，要是有一个人，陪你聊天，陪你游玩，和你分享生活中的琐事，不管高兴的还是悲伤的，不要感觉到厌烦，那是上天在这个世界送给你最好的礼物。“会者定离，一期一祈。”，不要等到失去了才去怀恋，请你好好爱护他。
+										</textarea>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tagInfo_item content_center" style="height:100px;">
+								<button id="modify" onclick="modify()" class="doSomething" style="width:120px;">修改</button>
+								<button id="save"onclick="save()" class="doSomething" style="width:120px;">保存</button>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+		<div class="col-md-2"></div>
+	</div>
+  </body>
+  
+  
+  <style type="text/css" >
+	html {
+		width:100%; 
+		height:100% ; 
+	}
+	
+	body {
+		width:100%; 
+		height:100%; 
+	}
+	
+	@link-colo {
+		color:green ; 
+	}
+	
+	.full_box {
+		height:100%; 
+		width:100% ;
+	}
+	
+	a:hover {
+		cursor:pointer;
+	}
+	
+	input,textarea {
+		border:0 ;
+		outline:0 ;
+		background:none;
+		width:inherit;
+	}
+	
+	.data_modify::after {
+		content:'' ;
+		width:inherit ;
+		border-bottom:0.5px solid #AFEEEE ;
+		box-shadow:0 1px 2px 0 #AFEEEE;
+		display:block;
+		margin-bottom:5px;
+	}
+	
+	.content_center{
+		z-index:100;
+		margin:0 auto ;
+		
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+
+		
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+
+		
+		display:box;
+		box-pack:center;
+		box-align:center;
+
+	}
+	
+	 .doSomething { 
+		border:1px solid #ccc;
+		border-radius:4px;
+		font-size:12px;
+    	font-weight:500;
+    	background:#fff;
+    	padding-left:5px;
+    	padding-right:5px;
+		margin-left:15px;
+		margin-right:15px;
+		
+	}
+	.doSomething:hover {
+		background-color:#F0FFFF!important ;
+		border:1px solid #00BFFF!important; 
+		box-shadow:0 0 1px #00BFFF!important;
+		color:#00BFFF!important ;
+		cursor:pointer!important;
+	}
+	
+	.function_group_title {
+		font:bold 16px/40px SimSun; color:#555;
+	}
+	
+	.function_group_wrapper {
+		border-bottom:1px dashed #bbb ;
+		overflow-y: hidden;
+		height:150px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	
+	.function_group {
+		overflow-x:scroll ;
+		overflow-y: hidden;
+		padding-bottom:25px;
+		box-sizing: content-box;
+		-webkit-overflow-scrolling: touch;
+	}
+	#content_box::-webkit-scrollbar {display:none}
+	.function_group::-webkit-scrollbar {display:none}
+	
+	
+	.op_box {
+		display:table-cell;
+	}
+	
+	.tag_box {
+		width:100px; height:35px; margin-left:10px; margin-right:10px;
+		border-radius:4px;
+		text-align:center ;
+		line-height:35px;
+	}
+	.tagInfo_item {
+		position:relative; margin-bottom:15px;
+	}
+	
+	.tagInfo_item .title {
+		font:bold 12px/30px Microsoft YaHei; color:green;
+	}
+	
+	
+	
+	
+  </style>
+</html>

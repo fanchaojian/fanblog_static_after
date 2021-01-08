@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>文章管理</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript" src="./js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./iconFont/albaba_AntDesign0fficialIcons/iconfont.css"> 
+  </head>
+  
+  <script type="text/javascript">
+	 
+	 
+  </script>
+  
+  <body>
+	<div class="container-fluid" style="height:100%; padding-left:0; padding-right:0;">
+		<div class="col-md-2"></div>
+		
+		<div class="col-xs-12 col-md-8" style="position:relative; height:100%;padding-left:0; padding-right:0;">
+			<div class="content_center" style="position:fixed; top:0; height:50px; width:inherit; top:0; border-bottom:2px solid #87CEFA; background-image:url('./imgs/header_after.jpg')">
+				<div class="col-xs-3"><span class="iconfont icon-left" style="font-size:20px;"></span></div>
+				<div class="col-xs-6" align="center">文章管理</div>
+				<div class="col-xs-3"></div>
+			</div>
+			
+			<!--展示区域-->
+			<div style="width:100%; height:100%; padding-top:50px; overflow-x:hidden;">
+				<div id="content_box" style="width:100%; height:100%; box-sizing:content-box; padding-right:25px;  overflow-y:scroll;">
+					<section style="padding-left:10px; padding-right:10px;">
+						<article class="article">
+							<span class="article_icon"></span>
+							<span>
+								<span class="article_title">致那些从未停止努力的人,他们一直都知道该怎么做。</span>
+							</span>
+						</article>
+						
+						<article class="article">
+							<span class="article_icon"></span>
+							<span>
+								<span class="article_title">愿你出走半生，归来任是少年</span>
+							</span>
+						</article>
+						
+						<article class="article">
+							<span class="article_icon"></span>
+							<span>
+								<span class="article_title">秋天的温柔</span>
+							</span>
+						</article>
+						
+						<article class="article">
+							<span class="article_icon"></span>
+							<span>
+								<span class="article_title">看遍万千风景，唯有故乡才是熟睡的温床</span>
+							</span>
+						</article>
+						
+					</section>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+		<div class="col-md-2"></div>
+	</div>
+  </body>
+  
+  
+  <style type="text/css" >
+	html {
+		width:100%; 
+		height:100% ; 
+	}
+	
+	body {
+		width:100%; 
+		height:100%; 
+	}
+	
+	@link-colo {
+		color:green ; 
+	}
+	
+	.full_box {
+		height:100%; 
+		width:100% ;
+	}
+	
+	a:hover {
+		cursor:pointer;
+	}
+	
+	input,textarea {
+		border:0 ;
+		outline:0 ;
+		background:none;
+		width:inherit;
+	}
+	
+	.data_modify::after {
+		content:'' ;
+		width:inherit ;
+		border-bottom:0.5px solid #87CEFA ;
+		box-shadow:0 1px 2px 0 #87CEFA;
+		display:block;
+		margin-bottom:5px;
+	}
+	
+	.content_center{
+		z-index:100;
+		margin:0 auto ;
+		
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+
+		
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+
+		
+		display:box;
+		box-pack:center;
+		box-align:center;
+
+	}
+	
+	 .doSomething { 
+		border:1px solid #ccc;
+		border-radius:4px;
+		font-size:12px;
+    	font-weight:500;
+    	background:#fff;
+    	padding-left:5px;
+    	padding-right:5px;
+		margin-left:15px;
+		margin-right:15px;
+		
+	}
+	.doSomething:hover {
+		background-color:#F0FFFF!important ;
+		border:1px solid #00BFFF!important; 
+		box-shadow:0 0 1px #00BFFF!important;
+		color:#00BFFF!important ;
+		cursor:pointer!important;
+	}
+	
+	#content_box::-webkit-scrollbar {display:none}
+
+	
+	.article_icon {
+		display:inline-block;
+		height:7px;
+		width:7px;
+		background-color:#ccc;
+		border-radius:50%;
+		margin-right:10px;
+	}
+	
+	.article {
+		line-height:50px; padding-top:15px; border-bottom:1px dashed #ccc;
+	}
+	
+	.article:hover{
+		border-bottom:1px dashed #00BFFF;
+	}
+	
+	.article_title:hover {
+		cursor:pointer;
+		color:#FF7F50; 
+	}
+	
+	
+  </style>
+</html>
